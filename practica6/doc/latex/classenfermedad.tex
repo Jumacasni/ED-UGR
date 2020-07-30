@@ -1,0 +1,293 @@
+\hypertarget{classenfermedad}{}\subsection{Referencia de la Clase enfermedad}
+\label{classenfermedad}\index{enfermedad@{enfermedad}}
+
+
+{\ttfamily \#include $<$enfermedad.\+h$>$}
+
+\subsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classenfermedad_a60eb5e620b0bf9a53d4f0980031aeefd}{enfermedad} ()
+\begin{DoxyCompactList}\small\item\em fichero de implementacion de la clase enfermedad \end{DoxyCompactList}\item 
+\hyperlink{classenfermedad_a7caef55b00a31ce18191ceaba81ed20c}{enfermedad} (const string \&\hyperlink{classenfermedad_ad7c4204057028a73bde6022678c6813e}{name}, const string \&\hyperlink{classenfermedad_a689cdbd469ecc28e045bda2f62a229d2}{ID}, const string \&\hyperlink{classenfermedad_a3684b7ec850d4c9357dd21bdd5e02803}{database})
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+void \hyperlink{classenfermedad_a18f621d13de01c0b06a05757ddd8a087}{set\+Name} (const string \&\hyperlink{classenfermedad_ad7c4204057028a73bde6022678c6813e}{name})
+\begin{DoxyCompactList}\small\item\em método para modificar el nombre \end{DoxyCompactList}\item 
+void \hyperlink{classenfermedad_a5ad52bdce8de9ac4fe25b460dc699af4}{set\+ID} (const string \&\hyperlink{classenfermedad_a689cdbd469ecc28e045bda2f62a229d2}{ID})
+\begin{DoxyCompactList}\small\item\em método para modificar la ID \end{DoxyCompactList}\item 
+void \hyperlink{classenfermedad_ac1f009307d52232420a72264e9c2ce3f}{set\+Database} (const string \&\hyperlink{classenfermedad_a3684b7ec850d4c9357dd21bdd5e02803}{database})
+\begin{DoxyCompactList}\small\item\em método para modificar la base de datos \end{DoxyCompactList}\item 
+string \hyperlink{classenfermedad_ab22f6f0140a5fe5a331d72920d95f55b}{get\+Name} () const 
+\begin{DoxyCompactList}\small\item\em método para obtener el nombre \end{DoxyCompactList}\item 
+string \hyperlink{classenfermedad_aaf9b9135b1d4efda7dc61856fce1b7b2}{get\+ID} () const 
+\begin{DoxyCompactList}\small\item\em método para obtener la ID \end{DoxyCompactList}\item 
+string \hyperlink{classenfermedad_a79d304a2e39ea391917744fd4d8f168d}{get\+Database} () const 
+\begin{DoxyCompactList}\small\item\em método para obtener la base de datos \end{DoxyCompactList}\item 
+\hyperlink{classenfermedad}{enfermedad} \& \hyperlink{classenfermedad_a795be16b7e3e6a858211ff20a62c9d85}{operator=} (const \hyperlink{classenfermedad}{enfermedad} \&e)
+\begin{DoxyCompactList}\small\item\em operador de asignación \end{DoxyCompactList}\item 
+string \hyperlink{classenfermedad_a044425928b4f7fa6a398cf2486260b23}{to\+String} () const 
+\begin{DoxyCompactList}\small\item\em método para pasar a string la enfermedad \end{DoxyCompactList}\item 
+bool \hyperlink{classenfermedad_ac2786ad7be914729516dd15611532fbb}{operator==} (const \hyperlink{classenfermedad}{enfermedad} \&e) const 
+\begin{DoxyCompactList}\small\item\em operador de comparación \end{DoxyCompactList}\item 
+bool \hyperlink{classenfermedad_a85bf5cbb035fd4712ff9a72188060e5c}{operator!=} (const \hyperlink{classenfermedad}{enfermedad} \&e) const 
+\begin{DoxyCompactList}\small\item\em operador de desigualdad \end{DoxyCompactList}\item 
+bool \hyperlink{classenfermedad_a2b3361849fa17dc88be561cd4233d584}{operator$<$} (const \hyperlink{classenfermedad}{enfermedad} \&e) const 
+\item 
+bool \hyperlink{classenfermedad_a31f2b1bed5745d9f00f3e567c04e68af}{name\+Contains} (const string \&str) const 
+\begin{DoxyCompactList}\small\item\em método para saber si una enfermedad contiene una cadena \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classenfermedad_ad7c4204057028a73bde6022678c6813e}{name}
+\item 
+string \hyperlink{classenfermedad_a689cdbd469ecc28e045bda2f62a229d2}{ID}
+\item 
+string \hyperlink{classenfermedad_a3684b7ec850d4c9357dd21bdd5e02803}{database}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentación del constructor y destructor}
+\index{enfermedad@{enfermedad}!enfermedad@{enfermedad}}
+\index{enfermedad@{enfermedad}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{enfermedad()}{enfermedad()}}]{\setlength{\rightskip}{0pt plus 5cm}enfermedad\+::enfermedad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classenfermedad_a60eb5e620b0bf9a53d4f0980031aeefd}{}\label{classenfermedad_a60eb5e620b0bf9a53d4f0980031aeefd}
+
+
+fichero de implementacion de la clase enfermedad 
+
+constructor por defecto \begin{DoxyReturn}{Devuelve}
+una enfermedad por defecto 
+\end{DoxyReturn}
+\index{enfermedad@{enfermedad}!enfermedad@{enfermedad}}
+\index{enfermedad@{enfermedad}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{enfermedad(const string \&name, const string \&\+I\+D, const string \&database)}{enfermedad(const string &name, const string &ID, const string &database)}}]{\setlength{\rightskip}{0pt plus 5cm}enfermedad\+::enfermedad (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{name, }
+\item[{const string \&}]{ID, }
+\item[{const string \&}]{database}
+\end{DoxyParamCaption}
+)}\hypertarget{classenfermedad_a7caef55b00a31ce18191ceaba81ed20c}{}\label{classenfermedad_a7caef55b00a31ce18191ceaba81ed20c}
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em name} & nombre de la enfermedad \\
+\hline
+{\em ID} & identificador de la enfermedad \\
+\hline
+{\em database} & base de datos de la enfermedad \\
+\hline
+\end{DoxyParams}
+
+
+\subsubsection{Documentación de las funciones miembro}
+\index{enfermedad@{enfermedad}!get\+Database@{get\+Database}}
+\index{get\+Database@{get\+Database}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{get\+Database() const }{getDatabase() const }}]{\setlength{\rightskip}{0pt plus 5cm}string enfermedad\+::get\+Database (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classenfermedad_a79d304a2e39ea391917744fd4d8f168d}{}\label{classenfermedad_a79d304a2e39ea391917744fd4d8f168d}
+
+
+método para obtener la base de datos 
+
+\begin{DoxyReturn}{Devuelve}
+base de datos de la enfermedad 
+\end{DoxyReturn}
+\index{enfermedad@{enfermedad}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{get\+I\+D() const }{getID() const }}]{\setlength{\rightskip}{0pt plus 5cm}string enfermedad\+::get\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classenfermedad_aaf9b9135b1d4efda7dc61856fce1b7b2}{}\label{classenfermedad_aaf9b9135b1d4efda7dc61856fce1b7b2}
+
+
+método para obtener la ID 
+
+\begin{DoxyReturn}{Devuelve}
+ID de la enfermedad 
+\end{DoxyReturn}
+\index{enfermedad@{enfermedad}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{get\+Name() const }{getName() const }}]{\setlength{\rightskip}{0pt plus 5cm}string enfermedad\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classenfermedad_ab22f6f0140a5fe5a331d72920d95f55b}{}\label{classenfermedad_ab22f6f0140a5fe5a331d72920d95f55b}
+
+
+método para obtener el nombre 
+
+\begin{DoxyReturn}{Devuelve}
+nombre de la enfermedad 
+\end{DoxyReturn}
+\index{enfermedad@{enfermedad}!name\+Contains@{name\+Contains}}
+\index{name\+Contains@{name\+Contains}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{name\+Contains(const string \&str) const }{nameContains(const string &str) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool enfermedad\+::name\+Contains (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{str}
+\end{DoxyParamCaption}
+) const}\hypertarget{classenfermedad_a31f2b1bed5745d9f00f3e567c04e68af}{}\label{classenfermedad_a31f2b1bed5745d9f00f3e567c04e68af}
+
+
+método para saber si una enfermedad contiene una cadena 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em str} & cadena que queremos comprobar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+verdadero si la enfermedad contiene la cadena, falso en caso contrario 
+\end{DoxyReturn}
+\index{enfermedad@{enfermedad}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{operator"!=(const enfermedad \&e) const }{operator!=(const enfermedad &e) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool enfermedad\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf enfermedad} \&}]{e}
+\end{DoxyParamCaption}
+) const}\hypertarget{classenfermedad_a85bf5cbb035fd4712ff9a72188060e5c}{}\label{classenfermedad_a85bf5cbb035fd4712ff9a72188060e5c}
+
+
+operador de desigualdad 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em e} & enfermedad a comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+verdadero si las enfermedades tienen un ID distinto, falso en caso contrario 
+\end{DoxyReturn}
+\index{enfermedad@{enfermedad}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{operator$<$(const enfermedad \&e) const }{operator<(const enfermedad &e) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool enfermedad\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf enfermedad} \&}]{e}
+\end{DoxyParamCaption}
+) const}\hypertarget{classenfermedad_a2b3361849fa17dc88be561cd4233d584}{}\label{classenfermedad_a2b3361849fa17dc88be561cd4233d584}
+\index{enfermedad@{enfermedad}!operator=@{operator=}}
+\index{operator=@{operator=}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{operator=(const enfermedad \&e)}{operator=(const enfermedad &e)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf enfermedad} \& enfermedad\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf enfermedad} \&}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{classenfermedad_a795be16b7e3e6a858211ff20a62c9d85}{}\label{classenfermedad_a795be16b7e3e6a858211ff20a62c9d85}
+
+
+operador de asignación 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em e} & enfermedad a asignar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+la enfermedad asignada 
+\end{DoxyReturn}
+\index{enfermedad@{enfermedad}!operator==@{operator==}}
+\index{operator==@{operator==}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{operator==(const enfermedad \&e) const }{operator==(const enfermedad &e) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool enfermedad\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf enfermedad} \&}]{e}
+\end{DoxyParamCaption}
+) const}\hypertarget{classenfermedad_ac2786ad7be914729516dd15611532fbb}{}\label{classenfermedad_ac2786ad7be914729516dd15611532fbb}
+
+
+operador de comparación 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em e} & enfermedad a comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+verdadero si las dos enfermedades tienen un ID igual, falso en caso contrario 
+\end{DoxyReturn}
+\index{enfermedad@{enfermedad}!set\+Database@{set\+Database}}
+\index{set\+Database@{set\+Database}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{set\+Database(const string \&database)}{setDatabase(const string &database)}}]{\setlength{\rightskip}{0pt plus 5cm}void enfermedad\+::set\+Database (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{database}
+\end{DoxyParamCaption}
+)}\hypertarget{classenfermedad_ac1f009307d52232420a72264e9c2ce3f}{}\label{classenfermedad_ac1f009307d52232420a72264e9c2ce3f}
+
+
+método para modificar la base de datos 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em database} & base de datos de la enfermedad \\
+\hline
+\end{DoxyParams}
+\index{enfermedad@{enfermedad}!set\+ID@{set\+ID}}
+\index{set\+ID@{set\+ID}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{set\+I\+D(const string \&\+I\+D)}{setID(const string &ID)}}]{\setlength{\rightskip}{0pt plus 5cm}void enfermedad\+::set\+ID (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classenfermedad_a5ad52bdce8de9ac4fe25b460dc699af4}{}\label{classenfermedad_a5ad52bdce8de9ac4fe25b460dc699af4}
+
+
+método para modificar la ID 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ID} & identificador de la enfermedad \\
+\hline
+\end{DoxyParams}
+\index{enfermedad@{enfermedad}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{set\+Name(const string \&name)}{setName(const string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}void enfermedad\+::set\+Name (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{classenfermedad_a18f621d13de01c0b06a05757ddd8a087}{}\label{classenfermedad_a18f621d13de01c0b06a05757ddd8a087}
+
+
+método para modificar el nombre 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em name} & nombre de la enfermedad \\
+\hline
+\end{DoxyParams}
+\index{enfermedad@{enfermedad}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{to\+String() const }{toString() const }}]{\setlength{\rightskip}{0pt plus 5cm}string enfermedad\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classenfermedad_a044425928b4f7fa6a398cf2486260b23}{}\label{classenfermedad_a044425928b4f7fa6a398cf2486260b23}
+
+
+método para pasar a string la enfermedad 
+
+\begin{DoxyReturn}{Devuelve}
+el valor de la enfermedad en string 
+\end{DoxyReturn}
+
+
+\subsubsection{Documentación de los datos miembro}
+\index{enfermedad@{enfermedad}!database@{database}}
+\index{database@{database}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{database}{database}}]{\setlength{\rightskip}{0pt plus 5cm}string enfermedad\+::database\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classenfermedad_a3684b7ec850d4c9357dd21bdd5e02803}{}\label{classenfermedad_a3684b7ec850d4c9357dd21bdd5e02803}
+\index{enfermedad@{enfermedad}!ID@{ID}}
+\index{ID@{ID}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{ID}{ID}}]{\setlength{\rightskip}{0pt plus 5cm}string enfermedad\+::\+ID\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classenfermedad_a689cdbd469ecc28e045bda2f62a229d2}{}\label{classenfermedad_a689cdbd469ecc28e045bda2f62a229d2}
+\index{enfermedad@{enfermedad}!name@{name}}
+\index{name@{name}!enfermedad@{enfermedad}}
+\paragraph[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}string enfermedad\+::name\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classenfermedad_ad7c4204057028a73bde6022678c6813e}{}\label{classenfermedad_ad7c4204057028a73bde6022678c6813e}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+/home/jumacasni/\+Documentos/\+Ingeniería Informática/\+Segundo/\+Estructura de Datos/\+Prácticas/\+Práctica 6/include/\hyperlink{enfermedad_8h}{enfermedad.\+h}\item 
+/home/jumacasni/\+Documentos/\+Ingeniería Informática/\+Segundo/\+Estructura de Datos/\+Prácticas/\+Práctica 6/src/\hyperlink{enfermedad_8cpp}{enfermedad.\+cpp}\end{DoxyCompactItemize}

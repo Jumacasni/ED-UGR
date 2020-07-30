@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>TDA Clinvar: Fichero Fuente /home/jumacasni/Documentos/Ingeniería Informática/Segundo/Estructura de Datos/Prácticas/Práctica 6/include/mutacion.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TDA Clinvar
+   &#160;<span id="projectnumber">V1</span>
+   </div>
+   <div id="projectbrief">TDA Clinvar</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">mutacion.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mutacion_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * mutacion.h</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * </span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright  (C) Juan F. Huete y Carlos Cano </span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef __MUTACION_H</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define __MUTACION_H</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span> </div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="enfermedad_8h.html">enfermedad.h</a>&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classmutacion.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmutacion.html">mutacion</a> {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; <span class="keyword">private</span>:</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classmutacion.html#aafc39218473e0f21eb0c3dc05dd4f35e">   25</a></span>&#160;  <span class="keywordtype">string</span> <a class="code" href="classmutacion.html#aafc39218473e0f21eb0c3dc05dd4f35e">ID</a>;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classmutacion.html#a57651966b952f782240ff9cff72c5d2f">   26</a></span>&#160;  <span class="keywordtype">string</span> <a class="code" href="classmutacion.html#a57651966b952f782240ff9cff72c5d2f">chr</a>; </div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classmutacion.html#ae1487b8648d0eaad68de5e4e5a87f3ff">   27</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classmutacion.html#ae1487b8648d0eaad68de5e4e5a87f3ff">pos</a>; </div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classmutacion.html#a2b3d0ed7547618562fae965d373b39e3">   28</a></span>&#160;  std::vector&lt;string&gt; <a class="code" href="classmutacion.html#a2b3d0ed7547618562fae965d373b39e3">ref_alt</a>; </div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classmutacion.html#af0048945b6062d6eb88b91db707993f6">   29</a></span>&#160;  std::vector&lt;string&gt; <a class="code" href="classmutacion.html#af0048945b6062d6eb88b91db707993f6">genes</a>; </div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classmutacion.html#a6dabfef6167d64030f095887b15f65dd">   30</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classmutacion.html#a6dabfef6167d64030f095887b15f65dd">common</a>;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classmutacion.html#aef3fe46b6a2d10e3993703ebd5d5be5f">   31</a></span>&#160;  std::vector&lt;float&gt; <a class="code" href="classmutacion.html#aef3fe46b6a2d10e3993703ebd5d5be5f">caf</a>;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classmutacion.html#ac8cca92dea1ab6fb9c193eed55a5ad28">   32</a></span>&#160;  std::vector&lt;enfermedad&gt; <a class="code" href="classmutacion.html#ac8cca92dea1ab6fb9c193eed55a5ad28">enfermedades</a>;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classmutacion.html#a0d029eee6925649df15081b780c12e37">   33</a></span>&#160;  std::vector&lt;int&gt; <a class="code" href="classmutacion.html#a0d029eee6925649df15081b780c12e37">clnsig</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classmutacion.html">mutacion</a>();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="classmutacion.html">mutacion</a>(<span class="keyword">const</span> <a class="code" href="classmutacion.html">mutacion</a>&amp; m);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classmutacion.html">mutacion</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp; str);   <span class="comment">//para crear objeto mutacion a partir de la cadena que contiene una línea completa del fichero de entrada</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> setID(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp; <span class="keywordtype">id</span>);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> setChr(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp; chr);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> setPos(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp; pos);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> setRef_alt(<span class="keyword">const</span> std::vector&lt;string&gt; &amp; ref_alt);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> setGenes (<span class="keyword">const</span> std::vector&lt;string&gt; &amp; genes);  </div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> setCommon (<span class="keyword">const</span> <span class="keywordtype">bool</span> &amp; common);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> setCaf (<span class="keyword">const</span> std::vector&lt;float&gt; &amp; caf);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> setEnfermedades (<span class="keyword">const</span> std::vector&lt;enfermedad&gt; &amp; enfermedades);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> setClnsig (<span class="keyword">const</span> std::vector&lt;int&gt; &amp; clnsig);  </div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  </div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">string</span> getID( ) <span class="keyword">const</span>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">string</span> getChr( ) <span class="keyword">const</span>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> getPos( ) <span class="keyword">const</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">const</span> std::vector&lt;string&gt; &amp; getRef_alt () <span class="keyword">const</span>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">const</span> std::vector&lt;string&gt; &amp; getGenes () <span class="keyword">const</span>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">bool</span> getCommon () <span class="keyword">const</span>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">const</span> std::vector&lt;float&gt; &amp; getCaf () <span class="keyword">const</span>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">const</span> std::vector&lt;enfermedad&gt; &amp; getEnfermedades () <span class="keyword">const</span>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">const</span> std::vector&lt;int&gt; &amp; getClnsig () <span class="keyword">const</span>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    </div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="classmutacion.html">mutacion</a> &amp; operator=(<span class="keyword">const</span> <a class="code" href="classmutacion.html">mutacion</a> &amp; m);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="classmutacion.html">mutacion</a> &amp; m) <span class="keyword">const</span>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> <a class="code" href="classmutacion.html">mutacion</a> &amp; m) <span class="keyword">const</span>;      <span class="comment">//El orden viene determinado por Chr y pos. El primer criterio es el número de cromosoma. El orden para el número de cromosoma se rige por &quot;1&quot;&lt;&quot;2&quot;&lt;&quot;3&quot;&lt;...&lt;&quot;22&quot;&lt;&quot;X&quot;&lt;&quot;Y&quot;&lt;&quot;MT&quot;. Dos mutaciones del mismo cromosoma deben ordenarse según su posición, de menor posición a mayor (orden natural de enteros). </span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  ostream&amp; <a class="code" href="mutacion_8h.html#a8f8ceb491862627db89b33bbe5b8d960">operator&lt;&lt; </a>( ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classmutacion.html">mutacion</a>&amp; );   <span class="comment">//Imprimir TODOS los campos del objeto mutación.</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classmutacion_html_a2b3d0ed7547618562fae965d373b39e3"><div class="ttname"><a href="classmutacion.html#a2b3d0ed7547618562fae965d373b39e3">mutacion::ref_alt</a></div><div class="ttdeci">std::vector&lt; string &gt; ref_alt</div><div class="ttdef"><b>Definition:</b> mutacion.h:28</div></div>
+<div class="ttc" id="classmutacion_html_a6dabfef6167d64030f095887b15f65dd"><div class="ttname"><a href="classmutacion.html#a6dabfef6167d64030f095887b15f65dd">mutacion::common</a></div><div class="ttdeci">bool common</div><div class="ttdef"><b>Definition:</b> mutacion.h:30</div></div>
+<div class="ttc" id="classmutacion_html_ac8cca92dea1ab6fb9c193eed55a5ad28"><div class="ttname"><a href="classmutacion.html#ac8cca92dea1ab6fb9c193eed55a5ad28">mutacion::enfermedades</a></div><div class="ttdeci">std::vector&lt; enfermedad &gt; enfermedades</div><div class="ttdef"><b>Definition:</b> mutacion.h:32</div></div>
+<div class="ttc" id="classmutacion_html_af0048945b6062d6eb88b91db707993f6"><div class="ttname"><a href="classmutacion.html#af0048945b6062d6eb88b91db707993f6">mutacion::genes</a></div><div class="ttdeci">std::vector&lt; string &gt; genes</div><div class="ttdef"><b>Definition:</b> mutacion.h:29</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classmutacion_html_aafc39218473e0f21eb0c3dc05dd4f35e"><div class="ttname"><a href="classmutacion.html#aafc39218473e0f21eb0c3dc05dd4f35e">mutacion::ID</a></div><div class="ttdeci">string ID</div><div class="ttdef"><b>Definition:</b> mutacion.h:25</div></div>
+<div class="ttc" id="classmutacion_html_a57651966b952f782240ff9cff72c5d2f"><div class="ttname"><a href="classmutacion.html#a57651966b952f782240ff9cff72c5d2f">mutacion::chr</a></div><div class="ttdeci">string chr</div><div class="ttdef"><b>Definition:</b> mutacion.h:26</div></div>
+<div class="ttc" id="classmutacion_html"><div class="ttname"><a href="classmutacion.html">mutacion</a></div><div class="ttdef"><b>Definition:</b> mutacion.h:23</div></div>
+<div class="ttc" id="enfermedad_8h_html"><div class="ttname"><a href="enfermedad_8h.html">enfermedad.h</a></div></div>
+<div class="ttc" id="classmutacion_html_aef3fe46b6a2d10e3993703ebd5d5be5f"><div class="ttname"><a href="classmutacion.html#aef3fe46b6a2d10e3993703ebd5d5be5f">mutacion::caf</a></div><div class="ttdeci">std::vector&lt; float &gt; caf</div><div class="ttdef"><b>Definition:</b> mutacion.h:31</div></div>
+<div class="ttc" id="mutacion_8h_html_a8f8ceb491862627db89b33bbe5b8d960"><div class="ttname"><a href="mutacion_8h.html#a8f8ceb491862627db89b33bbe5b8d960">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;os, const mutacion &amp;)</div><div class="ttdoc">operador de salida, imprime una mutación </div><div class="ttdef"><b>Definition:</b> mutacion.cpp:500</div></div>
+<div class="ttc" id="classmutacion_html_ae1487b8648d0eaad68de5e4e5a87f3ff"><div class="ttname"><a href="classmutacion.html#ae1487b8648d0eaad68de5e4e5a87f3ff">mutacion::pos</a></div><div class="ttdeci">unsigned int pos</div><div class="ttdef"><b>Definition:</b> mutacion.h:27</div></div>
+<div class="ttc" id="classmutacion_html_a0d029eee6925649df15081b780c12e37"><div class="ttname"><a href="classmutacion.html#a0d029eee6925649df15081b780c12e37">mutacion::clnsig</a></div><div class="ttdeci">std::vector&lt; int &gt; clnsig</div><div class="ttdef"><b>Definition:</b> mutacion.h:33</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

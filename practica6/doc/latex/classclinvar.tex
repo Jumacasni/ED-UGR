@@ -1,0 +1,443 @@
+\hypertarget{classclinvar}{}\subsection{Referencia de la Clase clinvar}
+\label{classclinvar}\index{clinvar@{clinvar}}
+
+
+{\ttfamily \#include $<$clinvar.\+h$>$}
+
+\subsubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classclinvar_1_1gen__iterator}{gen\+\_\+iterator}
+\item 
+class \hyperlink{classclinvar_1_1iterator}{iterator}
+\end{DoxyCompactItemize}
+\subsubsection*{Tipos públicos}
+\begin{DoxyCompactItemize}
+\item 
+typedef string \hyperlink{classclinvar_aa6cdb39378649a250def3e20163d3113}{I\+Dgen}
+\item 
+typedef string \hyperlink{classclinvar_a4ad33b1d063a729b56ea6ed9e4e2700d}{I\+Dmut}
+\item 
+typedef string \hyperlink{classclinvar_a2c121e1c9c137330a57590fe9f4e65ab}{I\+Denf}
+\item 
+typedef map$<$ \hyperlink{classclinvar_a2c121e1c9c137330a57590fe9f4e65ab}{I\+Denf}, \hyperlink{classenfermedad}{enfermedad} $>$\+::\hyperlink{classclinvar_1_1iterator}{iterator} \hyperlink{classclinvar_a4e04baa8b244566f2c25347c18f036b0}{enfermedad\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classclinvar_a9e98448d547cd82c37c7f7ee7b79d239}{load} (string nombre\+DB)
+\begin{DoxyCompactList}\small\item\em lee un fichero de mutaciones, linea a linea \end{DoxyCompactList}\item 
+void \hyperlink{classclinvar_a9a8b713b5d63e24bf0f802c19d865d5a}{insert} (const \hyperlink{classmutacion}{mutacion} \&x)
+\begin{DoxyCompactList}\small\item\em insertar una mutacion en clinvar \end{DoxyCompactList}\item 
+bool \hyperlink{classclinvar_ae2e2a20fd1d23c91d295cade508519cf}{erase} (\hyperlink{classclinvar_a4ad33b1d063a729b56ea6ed9e4e2700d}{I\+Dmut} ID)
+\begin{DoxyCompactList}\small\item\em eliminar una mutacion de clinvar \end{DoxyCompactList}\item 
+void \hyperlink{classclinvar_a65384b423bcfcd19f13c1f5c85dc74e0}{size} ()
+\begin{DoxyCompactList}\small\item\em consultar el tamaño de todas las estructuras de clinvar \end{DoxyCompactList}\item 
+\hyperlink{classclinvar_1_1iterator}{iterator} \hyperlink{classclinvar_ae82ad0f92abd82275796e91b716c876e}{find\+\_\+\+Mut} (\hyperlink{classclinvar_a4ad33b1d063a729b56ea6ed9e4e2700d}{I\+Dmut} ID)
+\begin{DoxyCompactList}\small\item\em buscar una mutacion en clinvar \end{DoxyCompactList}\item 
+\hyperlink{classclinvar_a4e04baa8b244566f2c25347c18f036b0}{enfermedad\+\_\+iterator} \hyperlink{classclinvar_adf3960783f536eb6e92b5de00bbbffa9}{find\+\_\+\+Enf} (\hyperlink{classclinvar_a2c121e1c9c137330a57590fe9f4e65ab}{I\+Denf} ID)
+\begin{DoxyCompactList}\small\item\em buscar una enfermedad en clinvar \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classenfermedad}{enfermedad} $>$ \hyperlink{classclinvar_aa0c4612fb169044098e02b03d85022c1}{get\+Enfermedades} (\hyperlink{classmutacion}{mutacion} \&mut)
+\begin{DoxyCompactList}\small\item\em buscar todas las enfermedades asociadas a una mutacion \end{DoxyCompactList}\item 
+list$<$ \hyperlink{classclinvar_a2c121e1c9c137330a57590fe9f4e65ab}{I\+Denf} $>$ \hyperlink{classclinvar_ab1dabd9f905dcb76dbd3f44f0bcf9f24}{get\+Enfermedades} (const string \&keyword)
+\begin{DoxyCompactList}\small\item\em buscar enfermedades \end{DoxyCompactList}\item 
+set$<$ \hyperlink{classclinvar_a4ad33b1d063a729b56ea6ed9e4e2700d}{I\+Dmut} $>$ \hyperlink{classclinvar_a62a1874ef6f517be56124c3ba755681f}{get\+Mutaciones\+Enf} (\hyperlink{classclinvar_a2c121e1c9c137330a57590fe9f4e65ab}{I\+Denf} ID)
+\begin{DoxyCompactList}\small\item\em buscar enfermedades \end{DoxyCompactList}\item 
+set$<$ \hyperlink{classclinvar_a4ad33b1d063a729b56ea6ed9e4e2700d}{I\+Dmut} $>$ \hyperlink{classclinvar_af33aec5fec0e24ffa6c1617fc8c62281}{get\+Mutaciones\+Gen} (\hyperlink{classclinvar_aa6cdb39378649a250def3e20163d3113}{I\+Dgen} ID)
+\begin{DoxyCompactList}\small\item\em buscar mutaciones \end{DoxyCompactList}\item 
+set$<$ \hyperlink{classmutacion}{mutacion}, \hyperlink{classProbMutaciones}{Prob\+Mutaciones} $>$ \hyperlink{classclinvar_a9041a5ec6eef333aa20c6d0c6ca7f26f}{top\+K\+Mutaciones} (int k, string keyword)
+\begin{DoxyCompactList}\small\item\em buscar mutaciones más probables \end{DoxyCompactList}\item 
+\hyperlink{classclinvar_1_1iterator}{iterator} \hyperlink{classclinvar_a1e6b62ceb84e40472b3119947a405453}{begin} ()
+\begin{DoxyCompactList}\small\item\em iterador de mutacion \end{DoxyCompactList}\item 
+\hyperlink{classclinvar_1_1iterator}{iterator} \hyperlink{classclinvar_a1a0c0fbf0e1dca56d6484542fe65ba0b}{end} ()
+\begin{DoxyCompactList}\small\item\em iterador de mutacion \end{DoxyCompactList}\item 
+\hyperlink{classclinvar_1_1iterator}{iterator} \hyperlink{classclinvar_adfc0e9da83925510242d5b20eb8be134}{lower\+\_\+bound} (string cromosoma, unsigned int posicion)
+\begin{DoxyCompactList}\small\item\em buscar mutaciones por rango \end{DoxyCompactList}\item 
+\hyperlink{classclinvar_1_1iterator}{iterator} \hyperlink{classclinvar_afd45e54ec82f01a5c0d39e95811a3574}{upper\+\_\+bound} (string cromosoma, unsigned int posicion)
+\begin{DoxyCompactList}\small\item\em buscar mutaciones por rango \end{DoxyCompactList}\item 
+\hyperlink{classclinvar_a4e04baa8b244566f2c25347c18f036b0}{enfermedad\+\_\+iterator} \hyperlink{classclinvar_aa41a88872af0b7acf1daaef72b1124e6}{ebegin} ()
+\begin{DoxyCompactList}\small\item\em iterador de enfermedad \end{DoxyCompactList}\item 
+\hyperlink{classclinvar_a4e04baa8b244566f2c25347c18f036b0}{enfermedad\+\_\+iterator} \hyperlink{classclinvar_af33a34f9e66faaf7769b66eef3062bcc}{eend} ()
+\begin{DoxyCompactList}\small\item\em iterador de mutacion \end{DoxyCompactList}\item 
+\hyperlink{classclinvar_1_1gen__iterator}{gen\+\_\+iterator} \hyperlink{classclinvar_a907aef6317168636a02c9502b3fac710}{gbegin} ()
+\begin{DoxyCompactList}\small\item\em iterador de genes \end{DoxyCompactList}\item 
+\hyperlink{classclinvar_1_1gen__iterator}{gen\+\_\+iterator} \hyperlink{classclinvar_ac2cf0bce7627b4bc3b4beae7718f2848}{gend} ()
+\begin{DoxyCompactList}\small\item\em iterador de mutacion \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+set$<$ \hyperlink{classmutacion}{mutacion} $>$ \hyperlink{classclinvar_a7e717fefc1fb718a4b801db416d7df09}{mut\+BD}
+\item 
+unordered\+\_\+map$<$ \hyperlink{classclinvar_a4ad33b1d063a729b56ea6ed9e4e2700d}{I\+Dmut}, set$<$ \hyperlink{classmutacion}{mutacion} $>$\+::\hyperlink{classclinvar_1_1iterator}{iterator} $>$ \hyperlink{classclinvar_ac978af60b36713988bf1d8f5f6cd0e15}{I\+Dm\+\_\+map}
+\item 
+map$<$ \hyperlink{classclinvar_aa6cdb39378649a250def3e20163d3113}{I\+Dgen}, list$<$ set$<$ \hyperlink{classmutacion}{mutacion} $>$\+::\hyperlink{classclinvar_1_1iterator}{iterator} $>$ $>$ \hyperlink{classclinvar_a2c9b3170058000631633b151a787265f}{gen\+\_\+map}
+\item 
+map$<$ \hyperlink{classclinvar_a2c121e1c9c137330a57590fe9f4e65ab}{I\+Denf}, \hyperlink{classenfermedad}{enfermedad} $>$ \hyperlink{classclinvar_aa2c6c2491a8f4b3c1617b001e1576368}{Enf\+DB}
+\item 
+multimap$<$ \hyperlink{classclinvar_a2c121e1c9c137330a57590fe9f4e65ab}{I\+Denf}, set$<$ \hyperlink{classmutacion}{mutacion} $>$\+::\hyperlink{classclinvar_1_1iterator}{iterator} $>$ \hyperlink{classclinvar_a6f17f858a717bc6c09bd1b5651c47d58}{I\+Denf\+\_\+map}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentación de los \textquotesingle{}Typedef\textquotesingle{} miembros de la clase}
+\index{clinvar@{clinvar}!enfermedad\+\_\+iterator@{enfermedad\+\_\+iterator}}
+\index{enfermedad\+\_\+iterator@{enfermedad\+\_\+iterator}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{enfermedad\+\_\+iterator}{enfermedad_iterator}}]{\setlength{\rightskip}{0pt plus 5cm}typedef map$<${\bf I\+Denf}, {\bf enfermedad}$>$\+::{\bf iterator} {\bf clinvar\+::enfermedad\+\_\+iterator}}\hypertarget{classclinvar_a4e04baa8b244566f2c25347c18f036b0}{}\label{classclinvar_a4e04baa8b244566f2c25347c18f036b0}
+\index{clinvar@{clinvar}!I\+Denf@{I\+Denf}}
+\index{I\+Denf@{I\+Denf}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{I\+Denf}{IDenf}}]{\setlength{\rightskip}{0pt plus 5cm}typedef string {\bf clinvar\+::\+I\+Denf}}\hypertarget{classclinvar_a2c121e1c9c137330a57590fe9f4e65ab}{}\label{classclinvar_a2c121e1c9c137330a57590fe9f4e65ab}
+\index{clinvar@{clinvar}!I\+Dgen@{I\+Dgen}}
+\index{I\+Dgen@{I\+Dgen}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{I\+Dgen}{IDgen}}]{\setlength{\rightskip}{0pt plus 5cm}typedef string {\bf clinvar\+::\+I\+Dgen}}\hypertarget{classclinvar_aa6cdb39378649a250def3e20163d3113}{}\label{classclinvar_aa6cdb39378649a250def3e20163d3113}
+\index{clinvar@{clinvar}!I\+Dmut@{I\+Dmut}}
+\index{I\+Dmut@{I\+Dmut}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{I\+Dmut}{IDmut}}]{\setlength{\rightskip}{0pt plus 5cm}typedef string {\bf clinvar\+::\+I\+Dmut}}\hypertarget{classclinvar_a4ad33b1d063a729b56ea6ed9e4e2700d}{}\label{classclinvar_a4ad33b1d063a729b56ea6ed9e4e2700d}
+
+
+\subsubsection{Documentación de las funciones miembro}
+\index{clinvar@{clinvar}!begin@{begin}}
+\index{begin@{begin}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf clinvar\+::iterator} clinvar\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_a1e6b62ceb84e40472b3119947a405453}{}\label{classclinvar_a1e6b62ceb84e40472b3119947a405453}
+
+
+iterador de mutacion 
+
+\begin{DoxyReturn}{Devuelve}
+iterador apuntando a la primera mutacion 
+\end{DoxyReturn}
+\index{clinvar@{clinvar}!ebegin@{ebegin}}
+\index{ebegin@{ebegin}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{ebegin()}{ebegin()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf clinvar\+::enfermedad\+\_\+iterator} clinvar\+::ebegin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_aa41a88872af0b7acf1daaef72b1124e6}{}\label{classclinvar_aa41a88872af0b7acf1daaef72b1124e6}
+
+
+iterador de enfermedad 
+
+\begin{DoxyReturn}{Devuelve}
+iterador apuntando a la primera enfermedad 
+\end{DoxyReturn}
+\index{clinvar@{clinvar}!eend@{eend}}
+\index{eend@{eend}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{eend()}{eend()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf clinvar\+::enfermedad\+\_\+iterator} clinvar\+::eend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_af33a34f9e66faaf7769b66eef3062bcc}{}\label{classclinvar_af33a34f9e66faaf7769b66eef3062bcc}
+
+
+iterador de mutacion 
+
+\begin{DoxyReturn}{Devuelve}
+iterador apuntando al siguiente elemento de la ultima enfermedad 
+\end{DoxyReturn}
+\index{clinvar@{clinvar}!end@{end}}
+\index{end@{end}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{end()}{end()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf clinvar\+::iterator} clinvar\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_a1a0c0fbf0e1dca56d6484542fe65ba0b}{}\label{classclinvar_a1a0c0fbf0e1dca56d6484542fe65ba0b}
+
+
+iterador de mutacion 
+
+\begin{DoxyReturn}{Devuelve}
+iterador apuntando al siguiente elemento de la ultima mutacion 
+\end{DoxyReturn}
+\index{clinvar@{clinvar}!erase@{erase}}
+\index{erase@{erase}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{erase(\+I\+Dmut I\+D)}{erase(IDmut ID)}}]{\setlength{\rightskip}{0pt plus 5cm}bool clinvar\+::erase (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Dmut}}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_ae2e2a20fd1d23c91d295cade508519cf}{}\label{classclinvar_ae2e2a20fd1d23c91d295cade508519cf}
+
+
+eliminar una mutacion de clinvar 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em ID} & identificador de la mutacion \\
+\hline
+\end{DoxyParams}
+\index{clinvar@{clinvar}!find\+\_\+\+Enf@{find\+\_\+\+Enf}}
+\index{find\+\_\+\+Enf@{find\+\_\+\+Enf}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{find\+\_\+\+Enf(\+I\+Denf I\+D)}{find_Enf(IDenf ID)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf clinvar\+::enfermedad\+\_\+iterator} clinvar\+::find\+\_\+\+Enf (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Denf}}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_adf3960783f536eb6e92b5de00bbbffa9}{}\label{classclinvar_adf3960783f536eb6e92b5de00bbbffa9}
+
+
+buscar una enfermedad en clinvar 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em ID} & identificador de la enfermedad \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+iterador con la posicion de la mutacion dentro de enf\+DB, \hyperlink{classclinvar_a1a0c0fbf0e1dca56d6484542fe65ba0b}{end()} si no lo encuentra 
+\end{DoxyReturn}
+\index{clinvar@{clinvar}!find\+\_\+\+Mut@{find\+\_\+\+Mut}}
+\index{find\+\_\+\+Mut@{find\+\_\+\+Mut}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{find\+\_\+\+Mut(\+I\+Dmut I\+D)}{find_Mut(IDmut ID)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf clinvar\+::iterator} clinvar\+::find\+\_\+\+Mut (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Dmut}}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_ae82ad0f92abd82275796e91b716c876e}{}\label{classclinvar_ae82ad0f92abd82275796e91b716c876e}
+
+
+buscar una mutacion en clinvar 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em ID} & identificador de la mutacion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+iterador con la posicion de la mutacion dentro de mut\+BD, \hyperlink{classclinvar_a1a0c0fbf0e1dca56d6484542fe65ba0b}{end()} si no lo encuentra 
+\end{DoxyReturn}
+\index{clinvar@{clinvar}!gbegin@{gbegin}}
+\index{gbegin@{gbegin}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{gbegin()}{gbegin()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf clinvar\+::gen\+\_\+iterator} clinvar\+::gbegin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_a907aef6317168636a02c9502b3fac710}{}\label{classclinvar_a907aef6317168636a02c9502b3fac710}
+
+
+iterador de genes 
+
+\begin{DoxyReturn}{Devuelve}
+iterador apuntando al primer gen 
+\end{DoxyReturn}
+\index{clinvar@{clinvar}!gend@{gend}}
+\index{gend@{gend}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{gend()}{gend()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf clinvar\+::gen\+\_\+iterator} clinvar\+::gend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_ac2cf0bce7627b4bc3b4beae7718f2848}{}\label{classclinvar_ac2cf0bce7627b4bc3b4beae7718f2848}
+
+
+iterador de mutacion 
+
+\begin{DoxyReturn}{Devuelve}
+iterador apuntando al siguiente elemento del último gen 
+\end{DoxyReturn}
+\index{clinvar@{clinvar}!get\+Enfermedades@{get\+Enfermedades}}
+\index{get\+Enfermedades@{get\+Enfermedades}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{get\+Enfermedades(mutacion \&mut)}{getEnfermedades(mutacion &mut)}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf enfermedad} $>$ clinvar\+::get\+Enfermedades (
+\begin{DoxyParamCaption}
+\item[{{\bf mutacion} \&}]{mut}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_aa0c4612fb169044098e02b03d85022c1}{}\label{classclinvar_aa0c4612fb169044098e02b03d85022c1}
+
+
+buscar todas las enfermedades asociadas a una mutacion 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em mut} & mutacion con las enfermedades buscadas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+vector con todas las enfermedades de la mutacion 
+\end{DoxyReturn}
+\index{clinvar@{clinvar}!get\+Enfermedades@{get\+Enfermedades}}
+\index{get\+Enfermedades@{get\+Enfermedades}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{get\+Enfermedades(const string \&keyword)}{getEnfermedades(const string &keyword)}}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ {\bf clinvar\+::\+I\+Denf} $>$ clinvar\+::get\+Enfermedades (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{keyword}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_ab1dabd9f905dcb76dbd3f44f0bcf9f24}{}\label{classclinvar_ab1dabd9f905dcb76dbd3f44f0bcf9f24}
+
+
+buscar enfermedades 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em keyword} & palabra que forma parte del nombre de la enfermedad \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+lista con los identificadores de las enfermedades 
+\end{DoxyReturn}
+\index{clinvar@{clinvar}!get\+Mutaciones\+Enf@{get\+Mutaciones\+Enf}}
+\index{get\+Mutaciones\+Enf@{get\+Mutaciones\+Enf}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{get\+Mutaciones\+Enf(\+I\+Denf I\+D)}{getMutacionesEnf(IDenf ID)}}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ {\bf clinvar\+::\+I\+Dmut} $>$ clinvar\+::get\+Mutaciones\+Enf (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Denf}}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_a62a1874ef6f517be56124c3ba755681f}{}\label{classclinvar_a62a1874ef6f517be56124c3ba755681f}
+
+
+buscar enfermedades 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em ID} & identificador de la enfermedad \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+conjunto ordenado (en orden creciente) de todas las mutaciones que se encuentran asociadas a la enfermedad 
+\end{DoxyReturn}
+\index{clinvar@{clinvar}!get\+Mutaciones\+Gen@{get\+Mutaciones\+Gen}}
+\index{get\+Mutaciones\+Gen@{get\+Mutaciones\+Gen}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{get\+Mutaciones\+Gen(\+I\+Dgen I\+D)}{getMutacionesGen(IDgen ID)}}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ {\bf clinvar\+::\+I\+Dmut} $>$ clinvar\+::get\+Mutaciones\+Gen (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Dgen}}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_af33aec5fec0e24ffa6c1617fc8c62281}{}\label{classclinvar_af33aec5fec0e24ffa6c1617fc8c62281}
+
+
+buscar mutaciones 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em ID} & identificador del gen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+conjunto ordenado (en orden creciente) de todas las mutaciones asociadas al gen 
+\end{DoxyReturn}
+\index{clinvar@{clinvar}!insert@{insert}}
+\index{insert@{insert}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{insert(const mutacion \&x)}{insert(const mutacion &x)}}]{\setlength{\rightskip}{0pt plus 5cm}void clinvar\+::insert (
+\begin{DoxyParamCaption}
+\item[{const {\bf mutacion} \&}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_a9a8b713b5d63e24bf0f802c19d865d5a}{}\label{classclinvar_a9a8b713b5d63e24bf0f802c19d865d5a}
+
+
+insertar una mutacion en clinvar 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em x} & mutacion a insertar \\
+\hline
+\end{DoxyParams}
+\index{clinvar@{clinvar}!load@{load}}
+\index{load@{load}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{load(string nombre\+D\+B)}{load(string nombreDB)}}]{\setlength{\rightskip}{0pt plus 5cm}void clinvar\+::load (
+\begin{DoxyParamCaption}
+\item[{string}]{nombre\+DB}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_a9e98448d547cd82c37c7f7ee7b79d239}{}\label{classclinvar_a9e98448d547cd82c37c7f7ee7b79d239}
+
+
+lee un fichero de mutaciones, linea a linea 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em nombre\+DB} & nombre del fichero \\
+\hline
+\end{DoxyParams}
+\index{clinvar@{clinvar}!lower\+\_\+bound@{lower\+\_\+bound}}
+\index{lower\+\_\+bound@{lower\+\_\+bound}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{lower\+\_\+bound(string cromosoma, unsigned int posicion)}{lower_bound(string cromosoma, unsigned int posicion)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf clinvar\+::iterator} clinvar\+::lower\+\_\+bound (
+\begin{DoxyParamCaption}
+\item[{string}]{cromosoma, }
+\item[{unsigned int}]{posicion}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_adfc0e9da83925510242d5b20eb8be134}{}\label{classclinvar_adfc0e9da83925510242d5b20eb8be134}
+
+
+buscar mutaciones por rango 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em cromosoma} & cromosoma de la mutacion \\
+\hline
+\mbox{\tt in}  & {\em posicion} & posicion dentro del cromosoma \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+iterador que apunta a la primera mutacion mayor o igual a los parametros 
+\end{DoxyReturn}
+\index{clinvar@{clinvar}!size@{size}}
+\index{size@{size}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{size()}{size()}}]{\setlength{\rightskip}{0pt plus 5cm}void clinvar\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_a65384b423bcfcd19f13c1f5c85dc74e0}{}\label{classclinvar_a65384b423bcfcd19f13c1f5c85dc74e0}
+
+
+consultar el tamaño de todas las estructuras de clinvar 
+
+\index{clinvar@{clinvar}!top\+K\+Mutaciones@{top\+K\+Mutaciones}}
+\index{top\+K\+Mutaciones@{top\+K\+Mutaciones}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{top\+K\+Mutaciones(int k, string keyword)}{topKMutaciones(int k, string keyword)}}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ {\bf mutacion}, {\bf Prob\+Mutaciones} $>$ clinvar\+::top\+K\+Mutaciones (
+\begin{DoxyParamCaption}
+\item[{int}]{k, }
+\item[{string}]{keyword}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_a9041a5ec6eef333aa20c6d0c6ca7f26f}{}\label{classclinvar_a9041a5ec6eef333aa20c6d0c6ca7f26f}
+
+
+buscar mutaciones más probables 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em k} & numero de mutaciones buscadas \\
+\hline
+\mbox{\tt in}  & {\em keyword} & palabra que forma parte del nombre de las enfermedades \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+conjunto ordenado (de mayor a menor probabilidad) de las k mutaciones más frecuentes asociadas a las enfermedades 
+\end{DoxyReturn}
+\index{clinvar@{clinvar}!upper\+\_\+bound@{upper\+\_\+bound}}
+\index{upper\+\_\+bound@{upper\+\_\+bound}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{upper\+\_\+bound(string cromosoma, unsigned int posicion)}{upper_bound(string cromosoma, unsigned int posicion)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf clinvar\+::iterator} clinvar\+::upper\+\_\+bound (
+\begin{DoxyParamCaption}
+\item[{string}]{cromosoma, }
+\item[{unsigned int}]{posicion}
+\end{DoxyParamCaption}
+)}\hypertarget{classclinvar_afd45e54ec82f01a5c0d39e95811a3574}{}\label{classclinvar_afd45e54ec82f01a5c0d39e95811a3574}
+
+
+buscar mutaciones por rango 
+
+
+\begin{DoxyParams}[1]{Parámetros}
+\mbox{\tt in}  & {\em cromosoma} & cromosoma de la mutacion \\
+\hline
+\mbox{\tt in}  & {\em posicion} & posicion dentro del cromosoma \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+iterador que apunta a la primera mutacion estrictamente mayor a los parametros 
+\end{DoxyReturn}
+
+
+\subsubsection{Documentación de los datos miembro}
+\index{clinvar@{clinvar}!Enf\+DB@{Enf\+DB}}
+\index{Enf\+DB@{Enf\+DB}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{Enf\+DB}{EnfDB}}]{\setlength{\rightskip}{0pt plus 5cm}map$<${\bf I\+Denf}, {\bf enfermedad}$>$ clinvar\+::\+Enf\+DB\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classclinvar_aa2c6c2491a8f4b3c1617b001e1576368}{}\label{classclinvar_aa2c6c2491a8f4b3c1617b001e1576368}
+\index{clinvar@{clinvar}!gen\+\_\+map@{gen\+\_\+map}}
+\index{gen\+\_\+map@{gen\+\_\+map}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{gen\+\_\+map}{gen_map}}]{\setlength{\rightskip}{0pt plus 5cm}map$<${\bf I\+Dgen}, list$<$set$<${\bf mutacion}$>$\+::{\bf iterator}$>$ $>$ clinvar\+::gen\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classclinvar_a2c9b3170058000631633b151a787265f}{}\label{classclinvar_a2c9b3170058000631633b151a787265f}
+\index{clinvar@{clinvar}!I\+Denf\+\_\+map@{I\+Denf\+\_\+map}}
+\index{I\+Denf\+\_\+map@{I\+Denf\+\_\+map}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{I\+Denf\+\_\+map}{IDenf_map}}]{\setlength{\rightskip}{0pt plus 5cm}multimap$<${\bf I\+Denf},set$<${\bf mutacion}$>$\+::{\bf iterator}$>$ clinvar\+::\+I\+Denf\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classclinvar_a6f17f858a717bc6c09bd1b5651c47d58}{}\label{classclinvar_a6f17f858a717bc6c09bd1b5651c47d58}
+\index{clinvar@{clinvar}!I\+Dm\+\_\+map@{I\+Dm\+\_\+map}}
+\index{I\+Dm\+\_\+map@{I\+Dm\+\_\+map}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{I\+Dm\+\_\+map}{IDm_map}}]{\setlength{\rightskip}{0pt plus 5cm}unordered\+\_\+map$<${\bf I\+Dmut}, set$<${\bf mutacion}$>$\+::{\bf iterator}$>$ clinvar\+::\+I\+Dm\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classclinvar_ac978af60b36713988bf1d8f5f6cd0e15}{}\label{classclinvar_ac978af60b36713988bf1d8f5f6cd0e15}
+\index{clinvar@{clinvar}!mut\+BD@{mut\+BD}}
+\index{mut\+BD@{mut\+BD}!clinvar@{clinvar}}
+\paragraph[{\texorpdfstring{mut\+BD}{mutBD}}]{\setlength{\rightskip}{0pt plus 5cm}set$<${\bf mutacion}$>$ clinvar\+::mut\+BD\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classclinvar_a7e717fefc1fb718a4b801db416d7df09}{}\label{classclinvar_a7e717fefc1fb718a4b801db416d7df09}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+/home/jumacasni/\+Documentos/\+Ingeniería Informática/\+Segundo/\+Estructura de Datos/\+Prácticas/\+Práctica 6/include/\hyperlink{clinvar_8h}{clinvar.\+h}\item 
+/home/jumacasni/\+Documentos/\+Ingeniería Informática/\+Segundo/\+Estructura de Datos/\+Prácticas/\+Práctica 6/src/\hyperlink{clinvar_8cpp}{clinvar.\+cpp}\end{DoxyCompactItemize}

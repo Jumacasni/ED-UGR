@@ -1,0 +1,485 @@
+\hypertarget{classmutacion}{}\subsection{Referencia de la Clase mutacion}
+\label{classmutacion}\index{mutacion@{mutacion}}
+
+
+{\ttfamily \#include $<$mutacion.\+h$>$}
+
+\subsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmutacion_a01cb8b2307eacbfb415f99373ff3c64a}{mutacion} ()
+\begin{DoxyCompactList}\small\item\em fichero de implementacion de la clase mutación \end{DoxyCompactList}\item 
+\hyperlink{classmutacion_a6bcb17c723a359ffac7dda8d5d427dfe}{mutacion} (const \hyperlink{classmutacion}{mutacion} \&m)
+\begin{DoxyCompactList}\small\item\em constructor de copia \end{DoxyCompactList}\item 
+\hyperlink{classmutacion_a8c5cc5b5146c511b9a1d6976156389c3}{mutacion} (const string \&str)
+\begin{DoxyCompactList}\small\item\em constructor a partir de un string \end{DoxyCompactList}\item 
+void \hyperlink{classmutacion_af6288453d3cb4e29b8be304ca262b170}{set\+ID} (const string \&id)
+\begin{DoxyCompactList}\small\item\em método para modificar la ID \end{DoxyCompactList}\item 
+void \hyperlink{classmutacion_a147ee1f35c78ab0b7cf891067bf2e336}{set\+Chr} (const string \&\hyperlink{classmutacion_a57651966b952f782240ff9cff72c5d2f}{chr})
+\begin{DoxyCompactList}\small\item\em método para modificar el cromosoma \end{DoxyCompactList}\item 
+void \hyperlink{classmutacion_a2667189a28d3ac983a8f63ca92e81fba}{set\+Pos} (const unsigned int \&\hyperlink{classmutacion_ae1487b8648d0eaad68de5e4e5a87f3ff}{pos})
+\begin{DoxyCompactList}\small\item\em método para modificar la posición dentro del cromosoma \end{DoxyCompactList}\item 
+void \hyperlink{classmutacion_af90752d5ce0e83943ea891ce995989f1}{set\+Ref\+\_\+alt} (const std\+::vector$<$ string $>$ \&\hyperlink{classmutacion_a2b3d0ed7547618562fae965d373b39e3}{ref\+\_\+alt})
+\begin{DoxyCompactList}\small\item\em método para modificar base(s) en el genoma de referencia y alternativa(s) posible(s) \end{DoxyCompactList}\item 
+void \hyperlink{classmutacion_a0cd370211bab4ae95120a68c57a92bed}{set\+Genes} (const std\+::vector$<$ string $>$ \&\hyperlink{classmutacion_af0048945b6062d6eb88b91db707993f6}{genes})
+\begin{DoxyCompactList}\small\item\em método para modificar genes \end{DoxyCompactList}\item 
+void \hyperlink{classmutacion_ab62d36e9bad78d43ace74fdaec909ca6}{set\+Common} (const bool \&\hyperlink{classmutacion_a6dabfef6167d64030f095887b15f65dd}{common})
+\begin{DoxyCompactList}\small\item\em método para modificar si una mutación es común o no \end{DoxyCompactList}\item 
+void \hyperlink{classmutacion_a447b9009932a64b2ed6269ed2577f865}{set\+Caf} (const std\+::vector$<$ float $>$ \&\hyperlink{classmutacion_aef3fe46b6a2d10e3993703ebd5d5be5f}{caf})
+\begin{DoxyCompactList}\small\item\em método para modificar la frecuencia de cada base del S\+NP en la población \end{DoxyCompactList}\item 
+void \hyperlink{classmutacion_a74da1d35cb0947b597ddf3b33e270d23}{set\+Enfermedades} (const std\+::vector$<$ \hyperlink{classenfermedad}{enfermedad} $>$ \&\hyperlink{classmutacion_ac8cca92dea1ab6fb9c193eed55a5ad28}{enfermedades})
+\begin{DoxyCompactList}\small\item\em método para modificar las enfermedades asociadas a la mutación \end{DoxyCompactList}\item 
+void \hyperlink{classmutacion_aed8c1aedd3468bf27bafab931d576454}{set\+Clnsig} (const std\+::vector$<$ int $>$ \&\hyperlink{classmutacion_a0d029eee6925649df15081b780c12e37}{clnsig})
+\begin{DoxyCompactList}\small\item\em método para modificar la relevancia clínica del S\+NP para cada enfermedad \end{DoxyCompactList}\item 
+string \hyperlink{classmutacion_a6e3fa261f38b413aff9172fe065da8b8}{get\+ID} () const 
+\begin{DoxyCompactList}\small\item\em método para obtener la ID \end{DoxyCompactList}\item 
+string \hyperlink{classmutacion_aefb0a9a6a8278f0d192ebc044198399c}{get\+Chr} () const 
+\begin{DoxyCompactList}\small\item\em método para obtener el cromosoma de la mutación \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmutacion_ad08cb3c30da4195adc3c22d0b4c8edd7}{get\+Pos} () const 
+\begin{DoxyCompactList}\small\item\em método para obtener el identificador de la posición dentro del cromosoma \end{DoxyCompactList}\item 
+const std\+::vector$<$ string $>$ \& \hyperlink{classmutacion_ad2e2452d29875aeed6dff7a98327135a}{get\+Ref\+\_\+alt} () const 
+\begin{DoxyCompactList}\small\item\em método para obtener base(s) en el genoma de referencia y alternativa(s) posible(s) \end{DoxyCompactList}\item 
+const std\+::vector$<$ string $>$ \& \hyperlink{classmutacion_a547be4b8d179d85cf46e7c311ce354c1}{get\+Genes} () const 
+\begin{DoxyCompactList}\small\item\em método para obtener los genes \end{DoxyCompactList}\item 
+bool \hyperlink{classmutacion_abc353016535a561fbd8e902c83861228}{get\+Common} () const 
+\begin{DoxyCompactList}\small\item\em método para saber si una mutación es común o no \end{DoxyCompactList}\item 
+const std\+::vector$<$ float $>$ \& \hyperlink{classmutacion_a2d60aed548b4b151bc2c198e989faa20}{get\+Caf} () const 
+\begin{DoxyCompactList}\small\item\em método para obtener la frecuencia de cada base de la mutación en la población \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classenfermedad}{enfermedad} $>$ \& \hyperlink{classmutacion_aec4992d4eab534b66fb572ff985d0b02}{get\+Enfermedades} () const 
+\begin{DoxyCompactList}\small\item\em método para obtener las enfermedades asociadas a la mutación \end{DoxyCompactList}\item 
+const std\+::vector$<$ int $>$ \& \hyperlink{classmutacion_ad555ad20ff5cdb729fe7187e4547bc9f}{get\+Clnsig} () const 
+\begin{DoxyCompactList}\small\item\em método para obtener la relevancia clínica del S\+NP para cada enfermedad \end{DoxyCompactList}\item 
+\hyperlink{classmutacion}{mutacion} \& \hyperlink{classmutacion_a183a12f2fae6160c9f381bd48d719a23}{operator=} (const \hyperlink{classmutacion}{mutacion} \&m)
+\begin{DoxyCompactList}\small\item\em operador de asignación \end{DoxyCompactList}\item 
+bool \hyperlink{classmutacion_a2e36c20aeff8c7cc88abe84efe0b11be}{operator==} (const \hyperlink{classmutacion}{mutacion} \&m) const 
+\begin{DoxyCompactList}\small\item\em operador de igualdad \end{DoxyCompactList}\item 
+bool \hyperlink{classmutacion_a0ccb4444b7afd120dc4557fd05f9ca27}{operator$<$} (const \hyperlink{classmutacion}{mutacion} \&m) const 
+\begin{DoxyCompactList}\small\item\em operador de comparación menor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classmutacion_aafc39218473e0f21eb0c3dc05dd4f35e}{ID}
+\item 
+string \hyperlink{classmutacion_a57651966b952f782240ff9cff72c5d2f}{chr}
+\item 
+unsigned int \hyperlink{classmutacion_ae1487b8648d0eaad68de5e4e5a87f3ff}{pos}
+\item 
+std\+::vector$<$ string $>$ \hyperlink{classmutacion_a2b3d0ed7547618562fae965d373b39e3}{ref\+\_\+alt}
+\item 
+std\+::vector$<$ string $>$ \hyperlink{classmutacion_af0048945b6062d6eb88b91db707993f6}{genes}
+\item 
+bool \hyperlink{classmutacion_a6dabfef6167d64030f095887b15f65dd}{common}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{classmutacion_aef3fe46b6a2d10e3993703ebd5d5be5f}{caf}
+\item 
+std\+::vector$<$ \hyperlink{classenfermedad}{enfermedad} $>$ \hyperlink{classmutacion_ac8cca92dea1ab6fb9c193eed55a5ad28}{enfermedades}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{classmutacion_a0d029eee6925649df15081b780c12e37}{clnsig}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Documentación del constructor y destructor}
+\index{mutacion@{mutacion}!mutacion@{mutacion}}
+\index{mutacion@{mutacion}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{mutacion()}{mutacion()}}]{\setlength{\rightskip}{0pt plus 5cm}mutacion\+::mutacion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmutacion_a01cb8b2307eacbfb415f99373ff3c64a}{}\label{classmutacion_a01cb8b2307eacbfb415f99373ff3c64a}
+
+
+fichero de implementacion de la clase mutación 
+
+constructor por defecto \index{mutacion@{mutacion}!mutacion@{mutacion}}
+\index{mutacion@{mutacion}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{mutacion(const mutacion \&m)}{mutacion(const mutacion &m)}}]{\setlength{\rightskip}{0pt plus 5cm}mutacion\+::mutacion (
+\begin{DoxyParamCaption}
+\item[{const {\bf mutacion} \&}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{classmutacion_a6bcb17c723a359ffac7dda8d5d427dfe}{}\label{classmutacion_a6bcb17c723a359ffac7dda8d5d427dfe}
+
+
+constructor de copia 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em m} & mutación para copiar \\
+\hline
+\end{DoxyParams}
+\index{mutacion@{mutacion}!mutacion@{mutacion}}
+\index{mutacion@{mutacion}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{mutacion(const string \&str)}{mutacion(const string &str)}}]{\setlength{\rightskip}{0pt plus 5cm}mutacion\+::mutacion (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{classmutacion_a8c5cc5b5146c511b9a1d6976156389c3}{}\label{classmutacion_a8c5cc5b5146c511b9a1d6976156389c3}
+
+
+constructor a partir de un string 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em str} & cadena de string de la mutación \\
+\hline
+\end{DoxyParams}
+
+
+\subsubsection{Documentación de las funciones miembro}
+\index{mutacion@{mutacion}!get\+Caf@{get\+Caf}}
+\index{get\+Caf@{get\+Caf}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{get\+Caf() const }{getCaf() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$ float $>$ \& mutacion\+::get\+Caf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmutacion_a2d60aed548b4b151bc2c198e989faa20}{}\label{classmutacion_a2d60aed548b4b151bc2c198e989faa20}
+
+
+método para obtener la frecuencia de cada base de la mutación en la población 
+
+\begin{DoxyReturn}{Devuelve}
+frecuencia de cada base de la mutación en la población 
+\end{DoxyReturn}
+\index{mutacion@{mutacion}!get\+Chr@{get\+Chr}}
+\index{get\+Chr@{get\+Chr}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{get\+Chr() const }{getChr() const }}]{\setlength{\rightskip}{0pt plus 5cm}string mutacion\+::get\+Chr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmutacion_aefb0a9a6a8278f0d192ebc044198399c}{}\label{classmutacion_aefb0a9a6a8278f0d192ebc044198399c}
+
+
+método para obtener el cromosoma de la mutación 
+
+\begin{DoxyReturn}{Devuelve}
+cromosoma 
+\end{DoxyReturn}
+\index{mutacion@{mutacion}!get\+Clnsig@{get\+Clnsig}}
+\index{get\+Clnsig@{get\+Clnsig}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{get\+Clnsig() const }{getClnsig() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$ int $>$ \& mutacion\+::get\+Clnsig (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmutacion_ad555ad20ff5cdb729fe7187e4547bc9f}{}\label{classmutacion_ad555ad20ff5cdb729fe7187e4547bc9f}
+
+
+método para obtener la relevancia clínica del S\+NP para cada enfermedad 
+
+\begin{DoxyReturn}{Devuelve}
+relevancia clínica del S\+NP para cada enfermedad 
+\end{DoxyReturn}
+\index{mutacion@{mutacion}!get\+Common@{get\+Common}}
+\index{get\+Common@{get\+Common}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{get\+Common() const }{getCommon() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool mutacion\+::get\+Common (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmutacion_abc353016535a561fbd8e902c83861228}{}\label{classmutacion_abc353016535a561fbd8e902c83861228}
+
+
+método para saber si una mutación es común o no 
+
+\begin{DoxyReturn}{Devuelve}
+1 si es común, 0 en caso contrario 
+\end{DoxyReturn}
+\index{mutacion@{mutacion}!get\+Enfermedades@{get\+Enfermedades}}
+\index{get\+Enfermedades@{get\+Enfermedades}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{get\+Enfermedades() const }{getEnfermedades() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$ {\bf enfermedad} $>$ \& mutacion\+::get\+Enfermedades (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmutacion_aec4992d4eab534b66fb572ff985d0b02}{}\label{classmutacion_aec4992d4eab534b66fb572ff985d0b02}
+
+
+método para obtener las enfermedades asociadas a la mutación 
+
+\begin{DoxyReturn}{Devuelve}
+enfermedades asociadas a la mutación 
+\end{DoxyReturn}
+\index{mutacion@{mutacion}!get\+Genes@{get\+Genes}}
+\index{get\+Genes@{get\+Genes}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{get\+Genes() const }{getGenes() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$ string $>$ \& mutacion\+::get\+Genes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmutacion_a547be4b8d179d85cf46e7c311ce354c1}{}\label{classmutacion_a547be4b8d179d85cf46e7c311ce354c1}
+
+
+método para obtener los genes 
+
+\begin{DoxyReturn}{Devuelve}
+genes 
+\end{DoxyReturn}
+\index{mutacion@{mutacion}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{get\+I\+D() const }{getID() const }}]{\setlength{\rightskip}{0pt plus 5cm}string mutacion\+::get\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmutacion_a6e3fa261f38b413aff9172fe065da8b8}{}\label{classmutacion_a6e3fa261f38b413aff9172fe065da8b8}
+
+
+método para obtener la ID 
+
+\begin{DoxyReturn}{Devuelve}
+el identificador de la mutación 
+\end{DoxyReturn}
+\index{mutacion@{mutacion}!get\+Pos@{get\+Pos}}
+\index{get\+Pos@{get\+Pos}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{get\+Pos() const }{getPos() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mutacion\+::get\+Pos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmutacion_ad08cb3c30da4195adc3c22d0b4c8edd7}{}\label{classmutacion_ad08cb3c30da4195adc3c22d0b4c8edd7}
+
+
+método para obtener el identificador de la posición dentro del cromosoma 
+
+\begin{DoxyReturn}{Devuelve}
+identificador de la posición dentro del cromosoma 
+\end{DoxyReturn}
+\index{mutacion@{mutacion}!get\+Ref\+\_\+alt@{get\+Ref\+\_\+alt}}
+\index{get\+Ref\+\_\+alt@{get\+Ref\+\_\+alt}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{get\+Ref\+\_\+alt() const }{getRef_alt() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$ string $>$ \& mutacion\+::get\+Ref\+\_\+alt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmutacion_ad2e2452d29875aeed6dff7a98327135a}{}\label{classmutacion_ad2e2452d29875aeed6dff7a98327135a}
+
+
+método para obtener base(s) en el genoma de referencia y alternativa(s) posible(s) 
+
+\begin{DoxyReturn}{Devuelve}
+base(s) en el genoma de referencia y alternativa(s) posible(s) 
+\end{DoxyReturn}
+\index{mutacion@{mutacion}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{operator$<$(const mutacion \&m) const }{operator<(const mutacion &m) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool mutacion\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf mutacion} \&}]{m}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmutacion_a0ccb4444b7afd120dc4557fd05f9ca27}{}\label{classmutacion_a0ccb4444b7afd120dc4557fd05f9ca27}
+
+
+operador de comparación menor 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em m} & mutación a comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+verdadero si la mutación sobre la que se opera tiene un cromosoma de menor valor, si el cromosoma es el mismo, se ordenará según la posición, falso en caso contrario 
+\end{DoxyReturn}
+\index{mutacion@{mutacion}!operator=@{operator=}}
+\index{operator=@{operator=}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{operator=(const mutacion \&m)}{operator=(const mutacion &m)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf mutacion} \& mutacion\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf mutacion} \&}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{classmutacion_a183a12f2fae6160c9f381bd48d719a23}{}\label{classmutacion_a183a12f2fae6160c9f381bd48d719a23}
+
+
+operador de asignación 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em m} & mutación a asignar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+la mutación sobre la que hemos asignado 
+\end{DoxyReturn}
+\index{mutacion@{mutacion}!operator==@{operator==}}
+\index{operator==@{operator==}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{operator==(const mutacion \&m) const }{operator==(const mutacion &m) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool mutacion\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf mutacion} \&}]{m}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmutacion_a2e36c20aeff8c7cc88abe84efe0b11be}{}\label{classmutacion_a2e36c20aeff8c7cc88abe84efe0b11be}
+
+
+operador de igualdad 
+
+\begin{DoxyReturn}{Devuelve}
+verdadero si el ID de las mutaciones es igual, falso en caso contrario 
+\end{DoxyReturn}
+\index{mutacion@{mutacion}!set\+Caf@{set\+Caf}}
+\index{set\+Caf@{set\+Caf}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{set\+Caf(const std\+::vector$<$ float $>$ \&caf)}{setCaf(const std::vector< float > &caf)}}]{\setlength{\rightskip}{0pt plus 5cm}void mutacion\+::set\+Caf (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ float $>$ \&}]{caf}
+\end{DoxyParamCaption}
+)}\hypertarget{classmutacion_a447b9009932a64b2ed6269ed2577f865}{}\label{classmutacion_a447b9009932a64b2ed6269ed2577f865}
+
+
+método para modificar la frecuencia de cada base del S\+NP en la población 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em caf} & vector con la frecuencia de cada base \\
+\hline
+\end{DoxyParams}
+\index{mutacion@{mutacion}!set\+Chr@{set\+Chr}}
+\index{set\+Chr@{set\+Chr}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{set\+Chr(const string \&chr)}{setChr(const string &chr)}}]{\setlength{\rightskip}{0pt plus 5cm}void mutacion\+::set\+Chr (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{chr}
+\end{DoxyParamCaption}
+)}\hypertarget{classmutacion_a147ee1f35c78ab0b7cf891067bf2e336}{}\label{classmutacion_a147ee1f35c78ab0b7cf891067bf2e336}
+
+
+método para modificar el cromosoma 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em chr} & de la mutación \\
+\hline
+\end{DoxyParams}
+\index{mutacion@{mutacion}!set\+Clnsig@{set\+Clnsig}}
+\index{set\+Clnsig@{set\+Clnsig}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{set\+Clnsig(const std\+::vector$<$ int $>$ \&clnsig)}{setClnsig(const std::vector< int > &clnsig)}}]{\setlength{\rightskip}{0pt plus 5cm}void mutacion\+::set\+Clnsig (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ int $>$ \&}]{clnsig}
+\end{DoxyParamCaption}
+)}\hypertarget{classmutacion_aed8c1aedd3468bf27bafab931d576454}{}\label{classmutacion_aed8c1aedd3468bf27bafab931d576454}
+
+
+método para modificar la relevancia clínica del S\+NP para cada enfermedad 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em clnsig} & relevancia clínica del S\+NP \\
+\hline
+\end{DoxyParams}
+\index{mutacion@{mutacion}!set\+Common@{set\+Common}}
+\index{set\+Common@{set\+Common}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{set\+Common(const bool \&common)}{setCommon(const bool &common)}}]{\setlength{\rightskip}{0pt plus 5cm}void mutacion\+::set\+Common (
+\begin{DoxyParamCaption}
+\item[{const bool \&}]{common}
+\end{DoxyParamCaption}
+)}\hypertarget{classmutacion_ab62d36e9bad78d43ace74fdaec909ca6}{}\label{classmutacion_ab62d36e9bad78d43ace74fdaec909ca6}
+
+
+método para modificar si una mutación es común o no 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em common} & 1 si es común, 0 si no lo es \\
+\hline
+\end{DoxyParams}
+\index{mutacion@{mutacion}!set\+Enfermedades@{set\+Enfermedades}}
+\index{set\+Enfermedades@{set\+Enfermedades}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{set\+Enfermedades(const std\+::vector$<$ enfermedad $>$ \&enfermedades)}{setEnfermedades(const std::vector< enfermedad > &enfermedades)}}]{\setlength{\rightskip}{0pt plus 5cm}void mutacion\+::set\+Enfermedades (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf enfermedad} $>$ \&}]{enfermedades}
+\end{DoxyParamCaption}
+)}\hypertarget{classmutacion_a74da1d35cb0947b597ddf3b33e270d23}{}\label{classmutacion_a74da1d35cb0947b597ddf3b33e270d23}
+
+
+método para modificar las enfermedades asociadas a la mutación 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em enfermedades} & enfermedades asociadas a la mutación \\
+\hline
+\end{DoxyParams}
+\index{mutacion@{mutacion}!set\+Genes@{set\+Genes}}
+\index{set\+Genes@{set\+Genes}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{set\+Genes(const std\+::vector$<$ string $>$ \&genes)}{setGenes(const std::vector< string > &genes)}}]{\setlength{\rightskip}{0pt plus 5cm}void mutacion\+::set\+Genes (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ string $>$ \&}]{genes}
+\end{DoxyParamCaption}
+)}\hypertarget{classmutacion_a0cd370211bab4ae95120a68c57a92bed}{}\label{classmutacion_a0cd370211bab4ae95120a68c57a92bed}
+
+
+método para modificar genes 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em genes} & genes asociados al S\+NP \\
+\hline
+\end{DoxyParams}
+\index{mutacion@{mutacion}!set\+ID@{set\+ID}}
+\index{set\+ID@{set\+ID}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{set\+I\+D(const string \&id)}{setID(const string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}void mutacion\+::set\+ID (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classmutacion_af6288453d3cb4e29b8be304ca262b170}{}\label{classmutacion_af6288453d3cb4e29b8be304ca262b170}
+
+
+método para modificar la ID 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em id} & identificador de la mutación \\
+\hline
+\end{DoxyParams}
+\index{mutacion@{mutacion}!set\+Pos@{set\+Pos}}
+\index{set\+Pos@{set\+Pos}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{set\+Pos(const unsigned int \&pos)}{setPos(const unsigned int &pos)}}]{\setlength{\rightskip}{0pt plus 5cm}void mutacion\+::set\+Pos (
+\begin{DoxyParamCaption}
+\item[{const unsigned int \&}]{pos}
+\end{DoxyParamCaption}
+)}\hypertarget{classmutacion_a2667189a28d3ac983a8f63ca92e81fba}{}\label{classmutacion_a2667189a28d3ac983a8f63ca92e81fba}
+
+
+método para modificar la posición dentro del cromosoma 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pos} & identificador de la posición dentro del cromosoma \\
+\hline
+\end{DoxyParams}
+\index{mutacion@{mutacion}!set\+Ref\+\_\+alt@{set\+Ref\+\_\+alt}}
+\index{set\+Ref\+\_\+alt@{set\+Ref\+\_\+alt}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{set\+Ref\+\_\+alt(const std\+::vector$<$ string $>$ \&ref\+\_\+alt)}{setRef_alt(const std::vector< string > &ref_alt)}}]{\setlength{\rightskip}{0pt plus 5cm}void mutacion\+::set\+Ref\+\_\+alt (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ string $>$ \&}]{ref\+\_\+alt}
+\end{DoxyParamCaption}
+)}\hypertarget{classmutacion_af90752d5ce0e83943ea891ce995989f1}{}\label{classmutacion_af90752d5ce0e83943ea891ce995989f1}
+
+
+método para modificar base(s) en el genoma de referencia y alternativa(s) posible(s) 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em ref\+\_\+alt} & vector con las bases y alternativas posibles \\
+\hline
+\end{DoxyParams}
+
+
+\subsubsection{Documentación de los datos miembro}
+\index{mutacion@{mutacion}!caf@{caf}}
+\index{caf@{caf}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{caf}{caf}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ mutacion\+::caf\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmutacion_aef3fe46b6a2d10e3993703ebd5d5be5f}{}\label{classmutacion_aef3fe46b6a2d10e3993703ebd5d5be5f}
+\index{mutacion@{mutacion}!chr@{chr}}
+\index{chr@{chr}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{chr}{chr}}]{\setlength{\rightskip}{0pt plus 5cm}string mutacion\+::chr\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmutacion_a57651966b952f782240ff9cff72c5d2f}{}\label{classmutacion_a57651966b952f782240ff9cff72c5d2f}
+\index{mutacion@{mutacion}!clnsig@{clnsig}}
+\index{clnsig@{clnsig}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{clnsig}{clnsig}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$int$>$ mutacion\+::clnsig\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmutacion_a0d029eee6925649df15081b780c12e37}{}\label{classmutacion_a0d029eee6925649df15081b780c12e37}
+\index{mutacion@{mutacion}!common@{common}}
+\index{common@{common}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{common}{common}}]{\setlength{\rightskip}{0pt plus 5cm}bool mutacion\+::common\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmutacion_a6dabfef6167d64030f095887b15f65dd}{}\label{classmutacion_a6dabfef6167d64030f095887b15f65dd}
+\index{mutacion@{mutacion}!enfermedades@{enfermedades}}
+\index{enfermedades@{enfermedades}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{enfermedades}{enfermedades}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf enfermedad}$>$ mutacion\+::enfermedades\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmutacion_ac8cca92dea1ab6fb9c193eed55a5ad28}{}\label{classmutacion_ac8cca92dea1ab6fb9c193eed55a5ad28}
+\index{mutacion@{mutacion}!genes@{genes}}
+\index{genes@{genes}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{genes}{genes}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$string$>$ mutacion\+::genes\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmutacion_af0048945b6062d6eb88b91db707993f6}{}\label{classmutacion_af0048945b6062d6eb88b91db707993f6}
+\index{mutacion@{mutacion}!ID@{ID}}
+\index{ID@{ID}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{ID}{ID}}]{\setlength{\rightskip}{0pt plus 5cm}string mutacion\+::\+ID\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmutacion_aafc39218473e0f21eb0c3dc05dd4f35e}{}\label{classmutacion_aafc39218473e0f21eb0c3dc05dd4f35e}
+\index{mutacion@{mutacion}!pos@{pos}}
+\index{pos@{pos}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{pos}{pos}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mutacion\+::pos\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmutacion_ae1487b8648d0eaad68de5e4e5a87f3ff}{}\label{classmutacion_ae1487b8648d0eaad68de5e4e5a87f3ff}
+\index{mutacion@{mutacion}!ref\+\_\+alt@{ref\+\_\+alt}}
+\index{ref\+\_\+alt@{ref\+\_\+alt}!mutacion@{mutacion}}
+\paragraph[{\texorpdfstring{ref\+\_\+alt}{ref_alt}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$string$>$ mutacion\+::ref\+\_\+alt\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classmutacion_a2b3d0ed7547618562fae965d373b39e3}{}\label{classmutacion_a2b3d0ed7547618562fae965d373b39e3}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+/home/jumacasni/\+Documentos/\+Ingeniería Informática/\+Segundo/\+Estructura de Datos/\+Prácticas/\+Práctica 6/include/\hyperlink{mutacion_8h}{mutacion.\+h}\item 
+/home/jumacasni/\+Documentos/\+Ingeniería Informática/\+Segundo/\+Estructura de Datos/\+Prácticas/\+Práctica 6/src/\hyperlink{mutacion_8cpp}{mutacion.\+cpp}\end{DoxyCompactItemize}
